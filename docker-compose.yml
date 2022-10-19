@@ -10,6 +10,7 @@ services:
       - "./code:/home/jovyan/code"
       - "./data:/home/jovyan/data"
       - "./out:/home/jovyan/out"
+      - "./tools:/home/jovyan/tools"
     environment:
       NB_UID: 501
       GRANT_SUDO: "yes"
