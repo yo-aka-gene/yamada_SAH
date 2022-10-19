@@ -33,6 +33,7 @@ init:
 	sh authorize_id.sh docker-compose.yml
 	docker compose up -d
 	make lib
+	wget "https://drive.google.com/uc?export=download&id=1ci_lIrgNxkRy8SHhkuQ20eKBeDa7n6ck" -O ./data/rawdata.zip
 	make docker-start
 
 terminate: ## remove docker container
