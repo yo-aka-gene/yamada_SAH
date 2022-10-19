@@ -30,6 +30,7 @@ docker-stop: ## stop docker container
 	docker stop yamada_sah-jupyterlab-1
 
 init:
+	sh authorize_id.sh docker-compose.yml
 	docker compose up -d
 	make lib
 	make docker-start
