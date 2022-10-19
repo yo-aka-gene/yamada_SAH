@@ -131,6 +131,3 @@ dmypy.json
 # MacOS
 .DS_Store
 
-# Docker
-docker-compose.yml
-
