@@ -1,4 +1,4 @@
-.PHONY: clean clean-build clean-pyc lib write-lib docker-start docker-stop init
+.PHONY: clean clean-build clean-pyc lib write-lib docker-start docker-stop init terminate reboot
 .DEFAULT_GOAL := help
 
 clean: clean-build clean-pyc
@@ -33,3 +33,10 @@ init:
 	docker compose up -d
 	make lib
 	make docker-start
+
+terminate: ## remove docker container
+	docker compose down
+
+reboot: ## remove docker container and create new one
+	make terminate
+	make init
