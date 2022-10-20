@@ -1,4 +1,4 @@
-.PHONY: clean clean-build clean-pyc lib write-lib docker-start docker-stop init terminate reboot fmt-data
+.PHONY: clean clean-build clean-pyc lib write-lib docker-start docker-stop gse79416 gse167110 init terminate reboot fmt-data
 .DEFAULT_GOAL := help
 
 clean: clean-build clean-pyc
@@ -29,11 +29,25 @@ docker-start: ## start docker container
 docker-stop: ## stop docker container
 	docker stop yamada_sah-jupyterlab-1
 
+gse79416: ## download gse79416 data
+	mkdir ./data/gse79416
+	curl -o ./data/gse79416/GSE79416_gene_exp.xls.gz 'https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE79416&format=file&file=GSE79416%5Fgene%5Fexp%2Exls%2Egz'
+	gzip -d data/gse79416/GSE79416_gene_exp.xls.gz
+
+gse167110: ## download gse167110 data
+	mkdir ./data/gse167110
+	curl -o ./data/gse167110.tar 'https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE167110&format=file'
+	tar -xvf ./data/gse167110.tar -C ./data/gse167110
+	rm ./data/gse167110.tar
+	gzip -d data/gse167110/*.gz
+
 init:
 	sh authorize_id.sh docker-compose.yml
 	docker compose up -d
 	make lib
 	wget "https://drive.google.com/uc?export=download&id=1ci_lIrgNxkRy8SHhkuQ20eKBeDa7n6ck" -O ./data/rawdata.zip
+	make gse79416
+	make gse167110
 	make docker-start
 
 terminate: ## remove docker container
