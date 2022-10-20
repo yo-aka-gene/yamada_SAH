@@ -1,4 +1,4 @@
-.PHONY: clean clean-build clean-pyc lib write-lib docker-start docker-stop init terminate reboot
+.PHONY: clean clean-build clean-pyc lib write-lib docker-start docker-stop init terminate reboot fmt-data
 .DEFAULT_GOAL := help
 
 clean: clean-build clean-pyc
@@ -42,3 +42,9 @@ terminate: ## remove docker container
 reboot: ## remove docker container and create new one
 	make terminate
 	make init
+
+fmt-data: ## format data matrix
+	unzip data/rawdata.zip -d data
+	chmod -R 777 data/rawdata
+	docker exec yamada_sah-jupyterlab-1 python data/rawdata/fmt.py
+	rm data/rawdata.zip
