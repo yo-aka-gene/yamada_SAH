@@ -1,4 +1,4 @@
-.PHONY: clean clean-build clean-pyc lib write-lib docker-start docker-stop gse79416 gse167110 init terminate reboot fmt-data
+.PHONY: clean clean-build clean-pyc lib write-lib docker-start docker-stop gse79416 gse167110 init terminate reboot fmt-data help
 .DEFAULT_GOAL := help
 
 clean: clean-build clean-pyc
@@ -62,3 +62,6 @@ fmt-data: ## format data matrix
 	chmod -R 777 data/rawdata
 	docker exec yamada_sah-jupyterlab-1 python data/rawdata/fmt.py
 	rm data/rawdata.zip
+
+help: ## user guide
+	open Makefile
