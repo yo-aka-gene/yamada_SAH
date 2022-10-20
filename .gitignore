@@ -131,3 +131,7 @@ dmypy.json
 # MacOS
 .DS_Store
 
+# Dataset
+.zip
+*.pkl
+data/rawdata/*
