@@ -136,3 +136,4 @@ dmypy.json
 *.pkl
 data/rawdata/*
 *.xls
+*.txt
