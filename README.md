@@ -13,14 +13,10 @@ SAH project by Yamada et al.
 2. figures will be exported in `out`
 
 ---
-## Data Availability
-### Data Availability of Secondary RNA-seq Data
+## Data Availability of Secondary RNA-seq Data (acquired by a third party)
 1. if you used `make init` cmd to set-up virtual env, `GSE79416` has been automatically downloaded; otherwise, run `make gse79416` to download respective data after the docker container has been started (the deposited file is saved in `data/gse79416` dir).
 2. Data will be formatted and automatically undergo logaristic transformation (log2(RKPM+1)) by `make gse79416` cmd. A label matrix is also generated (check `data/gse79416.pkl` and `data/gse79416_label.pkl`).
-
-### Data Avalilability of Our Primary Immunostaining Data
-1. run `make histology-data` cmd to download the data, and the rawdata file will be automatically formatted.
-2. To unzip the file you need a pwd. Check [here](https://docs.google.com/document/d/1mWYTNaSMP3A-MsR-W2q6ocpkTeiid-B0yP-AFFaHDxE/edit?usp=sharing) for details.
+3. For detailed information on the dataset, check the original article.
 
 ---
 ## Copyright of the datasets
