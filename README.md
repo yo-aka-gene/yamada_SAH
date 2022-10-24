@@ -14,7 +14,7 @@ SAH project by Yamada et al.
 
 ### Data Availability of Secondary RNA-seq Data
 1. if you used `make init` cmd above, `GSE79416` has been automatically downloaded; otherwise, run `make gse79416` to download respective data.
-2. Data will be formatted and automatically undergo logaristic transformation ($\log_2(RKPM+1)$) by `make gse79416` cmd. A label matrix is also generated.
+2. Data will be formatted and automatically undergo logaristic transformation (log2(RKPM+1)) by `make gse79416` cmd. A label matrix is also generated.
 
 ---
 ## Copyright of the datasets
