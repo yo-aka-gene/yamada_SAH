@@ -26,10 +26,3 @@ SAH project by Yamada et al.
 - Contact name: Jianhua Peng
 - E-mail: [544029930@qq.com](mailto:544029930@qq.com)
 
-### GSE167110
-- Hippocampal transcriptome changes after subarachnoid hemorrhage in mice
-- [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167110](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167110)
-- Contributors: [Regnier-Golanov AS](https://www.ncbi.nlm.nih.gov/pubmed/?term=Regnier-Golanov%20AS[Author]), [Dündar F](https://www.ncbi.nlm.nih.gov/pubmed/?term=D%C3%BCndar%20F[Author]), [Zumbo P](https://www.ncbi.nlm.nih.gov/pubmed/?term=Zumbo%20P[Author]), [Betel D](https://www.ncbi.nlm.nih.gov/pubmed/?term=Betel%20D[Author]), [Hernandez MS](https://www.ncbi.nlm.nih.gov/pubmed/?term=Hernandez%20MS[Author]), [Peterson LE](https://www.ncbi.nlm.nih.gov/pubmed/?term=Peterson%20LE[Author]), [Lo EH](https://www.ncbi.nlm.nih.gov/pubmed/?term=Lo%20EH[Author]), [Golanov EV](https://www.ncbi.nlm.nih.gov/pubmed/?term=Golanov%20EV[Author]), [Britz GW](https://www.ncbi.nlm.nih.gov/pubmed/?term=Britz%20GW[Author])
-- Citation: Regnier-Golanov AS, Dündar F, Zumbo P, Betel D et al. Hippocampal Transcriptome Changes After Subarachnoid Hemorrhage in Mice. Front Neurol 2021;12:691631. PMID: [34354664](https://www.ncbi.nlm.nih.gov/pubmed/34354664)
-- Contact name: Angelique Regnier-Golanov
-- E-mail: [aregnier-golanov@houstonmethodist.org](mailto:aregnier-golanov@houstonmethodist.org)
