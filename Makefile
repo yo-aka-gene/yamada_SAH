@@ -33,6 +33,7 @@ gse79416: ## download gse79416 data
 	mkdir ./data/gse79416
 	curl -o ./data/gse79416/GSE79416_gene_exp.xls.gz 'https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE79416&format=file&file=GSE79416%5Fgene%5Fexp%2Exls%2Egz'
 	gzip -d data/gse79416/GSE79416_gene_exp.xls.gz
+	docker exec yamada_sah-jupyterlab-1 python tools/preprocessing/_pipeline.py
 
 histology-data: ## download immunostaining data
 	wget "https://drive.google.com/uc?export=download&id=1ci_lIrgNxkRy8SHhkuQ20eKBeDa7n6ck" -O ./data/rawdata.zip
@@ -41,7 +42,7 @@ histology-data: ## download immunostaining data
 	docker exec yamada_sah-jupyterlab-1 python data/rawdata/fmt.py
 	rm data/rawdata.zip
 
-init:
+init: ## set-up essentials
 	sh authorize_id.sh docker-compose.yml
 	docker compose up -d
 	make lib
