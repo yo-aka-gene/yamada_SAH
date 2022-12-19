@@ -1,6 +1,6 @@
 # yamada_SAH
 [![DOI](https://img.shields.io/badge/DOI-10.1186/s41232.022.00236.4-blue.svg?longCache=true)](https://doi.org/10.1186/s41232-022-00236-4)
-[![PMID](https://img.shields.io/badge/PMID-unknown-orange.svg?longCache=true)]()
+[![PMID](https://img.shields.io/badge/PMID-36514181-orange.svg?longCache=true)](https://pubmed.ncbi.nlm.nih.gov/36514181/)
 
 SAH project by Yamada et al.
 
